@@ -1,0 +1,62 @@
+.inscripcio-html {
+    background-color: white !important;
+  }
+  
+  .title-ins {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .container-title-inscr {
+    border-bottom: 1px solid black;
+    padding: 10px 0;
+  }
+  
+  .information-text {
+    min-width: 50%;
+    max-width: 50%;
+    margin: 0 auto;
+    text-align: justify;
+  }
+  
+  /* HAS / IS / WHERE PER AQUEST PUNT */
+  .p-ins:where(.subtitle-p-ins) {
+    text-align: center;
+    color: grey;
+  }
+  
+  .p-ins:has(+ p) {
+    font-size: 20px;
+    color: black;
+  }
+  
+  .title-ins:is(h1) {
+    padding: 10px;
+    background-color: aliceblue;
+    font-weight: bold;
+  }
+  
+  /* HAS / IS / WHERE PER AQUEST PUNT */
+  
+  .container-title-inscr:is(.title-ins) {
+    color: #f06d06;
+  }
+  
+  .align-center {
+    text-align: center;
+  }
+  
+  .align-left {
+    text-align: left;
+  }
+  
+  .image-bracket {
+    min-width: 100%;
+    max-width: 100%;
+  }
+  
+  .president-info {
+    font-size: 20px;
+    font-style: oblique;
+  }
+  

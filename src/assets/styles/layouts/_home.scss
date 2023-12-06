@@ -1,3 +1,5 @@
+@import 'https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@300&display=swap';
+
 * {
   box-sizing: border-box;
 }
@@ -7,51 +9,71 @@ body {
   flex-direction: column;
   height: 100vh;
   margin: 0;
-  padding: 2rem;
-  font-family: $font-family-sans-serif;
+  font-family: Roboto, sans-serif !important;
   font-size: 16px;
   line-height: 24px;
-  background-color: $uoc-bg;
-  color: $uoc-corporate;
+  min-width:100vw;
+  max-width:100vw;
+  overflow-x: hidden;
+  background-color: transparent !important;
 }
 
-.uoc-container {
-  max-width: 800px;
-  margin: auto;
-  padding: 2rem;
-  border-radius: 2rem;
-  text-align: center;
-  background-color: #fff;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+.container{
+  display:flex;
+  min-width: 100vh;
+  max-width: 100vh;
 }
 
-.uoc-logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 1.5rem;
+// MENU
+.nav-item a{
+  font-size: 20px;
+}
+
+.menu-nav-item a:hover{
+  color: #a68a9f !important;
+  font-weight: 600;
+}
+
+.image-logo{
+  min-width: 200px;
   max-width: 200px;
-  height: auto;
-
-  @media (min-width: $mqMinWidth) {
-    max-width: none;
-  }
 }
 
-.uoc-title {
-  font-family: $font-family-serif;
-  font-size: 24px;
-  font-weight: 700;
-  color: $uoc-corporate;
-
-  @media (min-width: $mqMinWidth) {
-    font-size: 36px;
-  }
+.navbar-container{
+  display:block;
+  background-color: rgb(197 237 237);
 }
 
+.navbar-nav{
+  flex-direction:row !important;
+ }
+
+// footer
 .uoc-footer {
-  margin-top: 1.5rem;
-  font-size: 0.75rem;
-  text-align: center;
+ background-color: rgb(197 237 237);
+}
+
+svg:hover{
+  color: #a68a9f !important;
+}
+
+@media (width <= 775px){
+  .uoc-footer nav{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (width <= 446px){
+  .navbar-nav{
+    flex-direction:column !important;
+    text-align: center;
+  }
+}
+
+@media (width <= 991px){
+  .navbar-nav{
+   flex-direction: column !important;
+   align-items: center;
+  }
 }

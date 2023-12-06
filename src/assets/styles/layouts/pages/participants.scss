@@ -1,0 +1,74 @@
+.container-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:10px;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-group{
+    text-align: center;
+}
+
+.card-img-top{
+    min-width: 50%;
+    max-width: 75%;
+    min-height: 50%;
+    max-height: 75%;
+}
+
+.container-title h1{
+    background-color: aliceblue;
+    min-width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.participants-title{
+    text-align: center;
+}
+
+.p-t-padding{
+    padding:20px;
+}
+
+.bold{
+    font-weight: bold !important;
+}
+
+@media (width <= 1207px){
+    .card-img-top{
+        min-width: 50%;
+        max-width: 75%;
+        min-height: 50%;
+        max-height: 50%;
+    }
+    
+    .inline-text-break{
+        display:none;
+      }
+  }
+
+  @media (width <= 833px){
+    .inline-text-break{
+        display:block;
+      }
+
+      .card-group-flex{
+        flex-direction: column !important;
+      }
+
+      .padding-card{
+        padding:5px;
+      }
+  }
+
+
+
+

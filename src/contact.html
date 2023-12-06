@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html class="main-html">
+<html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <title>PEC#2 - Home</title>
+    <title>PEC#2 - Contacte</title>
   </head>
 
   <body>
@@ -45,51 +45,120 @@
       </div>
     
     <!-- CSS GRID POSTER -->
-    <div class="poster-container px-4 py-2">
-      <main class="poster main-index">    
-        <div class="poster-content">
-          <h2>19è TORNEIG BENÈFIC DE NADAL</h2>
-          <h2>Club de tenis MNK</h2>
-        </div>
-       
-        <section>
-          <ul class="poster-list">
-            <li>
-              <h3>Exhibició Nadal-Federer</h3>
-              <h5>Gaudeix de dos dels millors tenistes de la història</h5>
-              <p>Decembre 16, 18:00</p>
-              <p>Partits d'exhibició (1h max)</p>
-            </li>
-            <li>
-              <h3>Inici torneig benèfic - Primera semifinal</h3>
-              <h5>Tots els participants s'emporten algun premi</h5>
-              <p>Decembre 16, 19:00</p>
-              <p>Partits d'exhibició (1h max)</p>
-            </li>
-            <li>
-              <h3>Torneig benèfic - Segona semifinal</h3>
-              <h5>Tots els participants s'emporten algun premi</h5>
-              <p>Decembre 16, 20:00</p>
-              <p>Partits d'exhibició (1h max)</p>
-            </li>
-            <li>
-              <h3>Gran final + entrega de premis</h3>
-              <h5>Entrega del gran premi al guanyador + múltiples premis i cistelles de nadal</h5>
-              <p>Decembre 16, 21:00 - 23:00</p>
-              <p>Partits d'exhibició (1h max)</p>
-            </li>
-          </ul>
-        </section>
-        
-        <section class="ticketinfo">
-          <h4 class="text-center bold mb-0">Pots comprar la teva entrada a continuació!</h4>
-          <div class="text-center ticket-info-div-button">
-            <a href="./contact.html"><button type="button" class="btn btn-success bold">RESERVA LA TEVA ENTRADA</button></a>
-          </div>
-        </section>
-        
+    <div class="container-contact px-4">
+      <main class="container-content-contact">   
+        <div class="container-content-text">
+            <h1 class="section-title">Formulari de reserva</h1>
+            <p>Reserva la teva entrada i gaudeix d'un dia èpic</p>
+        </div> 
+        <form class="container-contact-form pb-4" name="contact" netlify>
+            <div class="form-row d-flex flex-column justify-content-center align-items-center">
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">Nom</label>
+                    <input type="text" class="form-control" id="inputName" placeholder="Name">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">Llinatge</label>
+                    <input type="text" class="form-control" id="inputSurname" placeholder="Llinatge">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label for="inputAddress">Address</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="C/ Badalona">
+                </div>
+                
+                <div class="form-group col-md-6">
+                    <label for="inputCity">City</label>
+                    <input type="text" class="form-control" id="inputCity">
+                </div>
+                
+                <div class="form-group col-md-6">
+                    <label for="inputZip">Zip</label>
+                    <input type="text" class="form-control" id="inputZip">
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-contact">RESERVAR</button>
+            </div>
+        </form>
       </main>
     </div>
+
+    <div class="container-contact">
+        <div class="row container-contact-row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-title">Amb la reserva podras gaudir de</h2>
+            </div>
+            <div class="col-lg-3 col-sm-6 mb-4">
+                <div class="card border-0 shadow rounded-xs pt-5">
+                    <div class="card-body"> <i class="fa fa-globe icon-lg icon-primary icon-bg-primary icon-bg-circle mb-3"></i>
+                        <h4 class="mt-4 mb-3">Partit exhibició</h4>
+                        <p>Gaudirás d'un partit antre dos deportistes històrics.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 mb-4">
+                <div class="card border-0 shadow rounded-xs pt-5">
+                    <div class="card-body"> <i class="fa fa-users icon-lg icon-yellow icon-bg-yellow icon-bg-circle mb-3"></i>
+                        <h4 class="mt-4 mb-3">Concert inicial</h4>
+                        <p>Podras gaudir del grup X abans del inici de la competició</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 mb-4">
+                <div class="card border-0 shadow rounded-xs pt-5">
+                    <div class="card-body"> <i class="fa fa-user-circle icon-lg icon-purple icon-bg-purple icon-bg-circle mb-3"></i>
+                        <h4 class="mt-4 mb-3">Veure els nostres jugadors</h4>
+                        <p>Semifinal doble amb final amb jugadors del club amb premis inclosos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 mb-4">
+                <div class="card border-0 shadow rounded-xs pt-5">
+                    <div class="card-body"> <i class="fa fa-info icon-lg icon-cyan icon-bg-cyan icon-bg-circle mb-3"></i>
+                        <h4 class="mt-4 mb-3">Premis al públic</h4>
+                        <p>Sorteig per el públic assistent que vinguin al torneig benèfic.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 mb-4">
+                <div class="card border-0 shadow rounded-xs pt-5">
+                    <div class="card-body"> <i class="fa fa-camera icon-lg icon-red icon-bg-red icon-bg-circle mb-3"></i>
+                        <h4 class="mt-4 mb-3">FOTOGRAFIAR-SE AMB LLEGENDES</h4>
+                        <p>El públic per poder compartir un moment amb les llegendes.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 mb-4">
+                <div class="card border-0 shadow rounded-xs pt-5">
+                    <div class="card-body"> <i class="fa fa-cutlery icon-lg icon-green icon-bg-green icon-bg-circle mb-3"></i>
+                        <h4 class="mt-4 mb-3">Sopar inclòs</h4>
+                        <p>Al final del torneig hi haurà un gran sopar.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 mb-4">
+                <div class="card border-0 shadow rounded-xs pt-5">
+                    <div class="card-body"> <i class="fa fa-users icon-lg icon-orange icon-bg-orange icon-bg-circle mb-3"></i>
+                        <h4 class="mt-4 mb-3">Conèixer persones del món del tenis</h4>
+                        <p>Augmenta la teva xarxa per tal de poder jugar amb més gent.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 mb-4">
+                <div class="card border-0 shadow rounded-xs pt-5">
+                    <div class="card-body"> <i class="fa fa-calendar icon-lg icon-blue icon-bg-blue icon-bg-circle mb-3"></i>
+                        <h4 class="mt-4 mb-3">Temps únic</h4>
+                        <p>Gaudeix d'una experiència amb gent immillorable.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- FOOTER -->
     <footer class="uoc-footer">
       <nav class="navbar navbar-footer border-top p-4">
@@ -104,13 +173,13 @@
           <div class="navbar-footer-links d-flex flex-row flex-grow-1 justify-content-center">
               <ul class="navbar-nav d-flex">
                   <li class="nav-item menu-nav-item">
-                      <a href="#" class="nav-link m-2 menu-item nav-active">PARTICIPANTS</a>
+                      <a href="./participants.html" class="nav-link m-2 menu-item nav-active">PARTICIPANTS</a>
                   </li>
                   <li class="nav-item menu-nav-item">
-                      <a href="#" class="nav-link m-2 menu-item">INFORMACIÓ</a>
+                      <a href="./inscripcio.html" class="nav-link m-2 menu-item">INFORMACIÓ</a>
                   </li>
                   <li class="nav-item menu-nav-item">
-                      <a href="#" class="nav-link m-2 menu-item">CONTACTE</a>
+                      <a href="./contact.html" class="nav-link m-2 menu-item">CONTACTE</a>
                   </li>
               </ul>
           </div>
@@ -142,7 +211,6 @@
           </div>
       </nav>
   </footer>
-  
   <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
